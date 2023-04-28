@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Footer,  Possibility, Features, WhatGPT4, Header } from './container';
+import {  Brand, Navbar } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // the jsx fragment can be made as div also with class name APP
+   <div className='App'> 
+   <div className="gradient__bg">
+    <Navbar />
+    <Header />
+   </div>
+   <Brand />
+   <WhatGPT4 />
+   <Features />
+   <Possibility/>
+   
+   <Footer/>
+   </div>
   );
 }
 
